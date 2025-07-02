@@ -1,12 +1,12 @@
 # Customizable Load Balancer using Consistent Hashing
 
-## 📘 Overview
+## Overview
 
 This project implements a customizable load balancer using **consistent hashing** in a distributed system. It asynchronously distributes client requests among multiple server replicas. It is containerized using Docker and managed through a central load balancer service.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 - **Load Balancer**: Manages routing, server scaling, and failure recovery.
 - **Web Servers**: Simple Flask servers that respond to HTTP GET requests.
@@ -16,24 +16,24 @@ This project implements a customizable load balancer using **consistent hashing*
        +---------+             +-------------+
        | Client  | --------->  | LoadBalancer|
        +---------+             +-------------+
-                                  | | |
-                                  V V V
+                                |     |      |
+                                V     V      V
                         +--------+ +--------+ +--------+
                         | Server1| | Server2| | Server3|
                         +--------+ +--------+ +--------+
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup
 
-### ✅ Requirements
+### Requirements
 
 - Docker Desktop (WSL 2 enabled for Windows)
 - Docker Compose v2.15+
 - Python 3.9+
 - Git
 
-### 📦 Clone and Run
+### Clone and Run
 
 ```bash
 git clone https://github.com/Maiyo-D-D/custom-load-balancer.git
