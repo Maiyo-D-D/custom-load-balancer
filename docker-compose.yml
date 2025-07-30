@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      - load_balancer_network
+    environment:
+      - SERVER_ID=server1
+
+  load_balancer:
+    build:
+      context: ./load_balancer
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      - load_balancer_network
+    depends_on:
+      - server
+
+networks:
+  load_balancer_network:
+    driver: bridge
