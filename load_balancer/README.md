@@ -10,8 +10,8 @@ The load balancer is responsible for distributing incoming requests to multiple 
 
 1. **Clone the Repository**: 
    ```bash
-   git clone <repository-url>
-   cd load-balancer-project/load_balancer
+   git clone https://github.com/Maiyo-D-D/custom-load-balance
+   cd custom-load-balancer/load_balancer
    ```
 
 2. **Install Dependencies**: 
@@ -34,14 +34,3 @@ python load_balancer.py
 ```
 
 Make sure that the server instances are running and accessible.
-
-## Contribution Guidelines
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Push your branch and create a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.

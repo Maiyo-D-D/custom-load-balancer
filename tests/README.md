@@ -31,13 +31,3 @@ This will execute all the tests in the `tests` directory.
 ## Interpreting Results
 
 After running the tests, you will see a summary of the results in the terminal. Each test will indicate whether it passed or failed. In case of failures, the output will provide details on what went wrong, allowing you to debug the issue.
-
-## Contributing
-
-If you would like to contribute to the testing suite, please follow these guidelines:
-
-1. Write clear and concise tests that cover various scenarios.
-2. Ensure that your tests are well-documented.
-3. Run all tests before submitting your changes to ensure nothing is broken.
-
-For any questions or issues, please refer to the main project documentation or reach out to the project maintainers.

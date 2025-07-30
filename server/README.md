@@ -10,8 +10,8 @@ The server is responsible for handling incoming requests and processing them acc
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
-   cd load-balancer-project/server
+   git clone https://github.com/Maiyo-D-D/custom-load-balancer
+   cd custom-load-balancer/server
    ```
 
 2. **Install Dependencies**
@@ -37,16 +37,3 @@ If using Docker, you can run the container with:
 ```bash
 docker run -p <host-port>:<container-port> server-image
 ```
-
-## Contribution Guidelines
-
-Contributions are welcome! Please follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Push your branch and create a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
