@@ -2,7 +2,7 @@
 
 A scalable, consistent hashing-based load balancer implementation for distributed systems.
 
-## 📋 Project Overview
+## Project Overview
 
 This project implements a customizable load balancer that routes requests from multiple clients asynchronously among several servers using consistent hashing. The load balancer ensures nearly even distribution of load and provides automatic failure recovery.
 
@@ -14,20 +14,8 @@ This project implements a customizable load balancer that routes requests from m
 - **Container Management**: Full Docker container lifecycle management
 - **Load Distribution**: Efficient request routing with minimal redistribution
 
-## 🏗️ Architecture
-┌─────────────┐    ┌──────────────────┐    ┌─────────────┐  
-│   Client 1  │────│                  │────│   Server 1  │  
-└─────────────┘    │                  │    └─────────────┘  
-│  Load Balancer   │  
-┌─────────────┐────│  (Port 5000)     │────┌─────────────┐  
-│   Client 2  │    │                  │    │   Server 2  │  
-└─────────────┘    │  - Consistent    │    └─────────────┘  
-│    Hashing       │  
-┌─────────────┐────│  - Health Check  │────┌─────────────┐  
-│   Client N  │    │  - Auto Recovery │    │   Server N  │  
-└─────────────┘    └──────────────────┘    └─────────────┘  
-
-## 🚀 Quick Start
+## Architecture
+<pre> ```plaintext ┌─────────────┐ ┌──────────────────┐ ┌─────────────┐ │ Client 1 │──▶│ │◀──│ Server 1 │ └─────────────┘ │ Load Balancer │ └─────────────┘ ┌─────────────┐ │ (Port 5000) │ ┌─────────────┐ │ Client 2 │──▶│ - Consistent │◀──│ Server 2 │ └─────────────┘ │ Hashing │ └─────────────┘ ┌─────────────┐ │ - Health Check │ ┌─────────────┐ │ Client N │──▶│ - Auto Recovery │◀──│ Server N │ └─────────────┘ └──────────────────┘ └─────────────┘ ``` </pre>
 
 ### Prerequisites
 
@@ -58,7 +46,7 @@ This project implements a customizable load balancer that routes requests from m
    docker-compose up
    ```
 
-## 🧩 Additional Information
+## Additional Information
 
 - REST APIs allow dynamic scaling and health monitoring.
 - Performance analysis scripts and tests are included in the `tests` directory.
