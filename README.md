@@ -15,7 +15,19 @@ This project implements a customizable load balancer that routes requests from m
 - **Load Distribution**: Efficient request routing with minimal redistribution
 
 ## Architecture
-<pre> ```plaintext ┌─────────────┐ ┌──────────────────┐ ┌─────────────┐ │ Client 1 │──▶│ │◀──│ Server 1 │ └─────────────┘ │ Load Balancer │ └─────────────┘ ┌─────────────┐ │ (Port 5000) │ ┌─────────────┐ │ Client 2 │──▶│ - Consistent │◀──│ Server 2 │ └─────────────┘ │ Hashing │ └─────────────┘ ┌─────────────┐ │ - Health Check │ ┌─────────────┐ │ Client N │──▶│ - Auto Recovery │◀──│ Server N │ └─────────────┘ └──────────────────┘ └─────────────┘ ``` </pre>
+
+```text
+┌─────────────┐    ┌──────────────────┐    ┌─────────────┐
+│   Client 1  │────│                  │────│   Server 1  │
+└─────────────┘    │                  │    └─────────────┘
+│  Load Balancer   │
+┌─────────────┐────│  (Port 5000)     │────┌─────────────┐
+│   Client 2  │    │                  │    │   Server 2  │
+└─────────────┘    │  - Consistent    │    └─────────────┘
+│    Hashing       │
+┌─────────────┐────│  - Health Check  │────┌─────────────┐
+│   Client N  │    │  - Auto Recovery │    │   Server N  │
+└─────────────┘    └──────────────────┘    └─────────────┘
 
 ### Prerequisites
 
