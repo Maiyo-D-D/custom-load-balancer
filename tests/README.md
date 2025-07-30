@@ -30,4 +30,4 @@ This will execute all the tests in the `tests` directory.
 
 ## Interpreting Results
 
-After running the tests, you will see a summary of the results in the terminal. Each test will indicate whether it passed or failed. In case of failures, the output will provide details on what went wrong, allowing you to debug the issue.
+After running the tests, you will see a summary of the results in the terminal. Each test will indicate whether it passed or failed. In case of failures, the output will provide details on what went wrong, allowing you to debug the issue

@@ -26,7 +26,7 @@ The server is responsible for handling incoming requests and processing them acc
    docker build -t server-image .
    ```
 
-## Usage
+##  Usage
 
 To run the server application, execute the following command:
 ```bash

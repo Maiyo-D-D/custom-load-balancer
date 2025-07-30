@@ -20,4 +20,4 @@ This document outlines the design choices made during the development of the loa
 - **Comprehensive Documentation**: Each component of the project includes its own README file, providing specific instructions and details. This modular documentation approach makes it easier for developers to understand and contribute to individual parts of the project.
 
 ## Conclusion
-The design choices made in this project aim to create a robust, scalable, and maintainable load balancer system. By documenting these decisions, we provide clarity and rationale that can guide future development and enhancements.
+The design choices made in this project aim to create a robust, scalable, and maintainable load balancer system. By documenting these decisions, we provide clarity and rationale that can guide future development and enhancements

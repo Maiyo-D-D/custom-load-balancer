@@ -88,4 +88,4 @@ In case of an error, the API will return an appropriate status code along with a
 
 ## Conclusion
 
-This API documentation provides a comprehensive overview of the available endpoints in the load balancer project. For further details on implementation and usage, please refer to the project's README and other documentation files.
+This API documentation provides a comprehensive overview of the available endpoints in the load balancer project. For further details on implementation and usage, please refer to the project's README and other documentation files

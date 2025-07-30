@@ -32,5 +32,4 @@ To run the load balancer, you can use the following command:
 ```bash
 python load_balancer.py
 ```
-
 Make sure that the server instances are running and accessible.
