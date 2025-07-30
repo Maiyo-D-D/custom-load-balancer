@@ -28,6 +28,7 @@ This project implements a customizable load balancer that routes requests from m
 ┌─────────────┐────│  - Health Check  │────┌─────────────┐
 │   Client N  │    │  - Auto Recovery │    │   Server N  │
 └─────────────┘    └──────────────────┘    └─────────────┘
+```
 
 ### Prerequisites
 
